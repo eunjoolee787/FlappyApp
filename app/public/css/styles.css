@@ -5602,6 +5602,11 @@ li.nav_link {
     li.nav_link:hover a {
       color: #fff; }
 
+.content {
+  height: 750px;
+  width: 100%;
+  background-color: red; }
+
 .header_content li a {
   font-size: 13px;
   color: #1ACDCC;
@@ -5619,9 +5624,34 @@ li.nav_link {
   background-repeat: no-repeat;
   background-size: contain; }
 
+.content_info ul {
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+  text-align: center; }
+
+.nav_black {
+  padding: 15px;
+  border-bottom: 1px solid #1ACDCC;
+  background-color: black;
+  list-style-type: none; }
+
+.nav_content {
+  padding: 15px;
+  border-bottom: 1px solid gray;
+  background-color: #1ACDCC;
+  list-style-type: none; }
+
+li.nav_content span.hover_color {
+  margin-right: -20px;
+  padding-right: 22px; }
+  li.nav_content span.hover_color:hover {
+    border-color: #fff;
+    color: #fff; }
+
 #three_content {
   background-color: #2B2D33;
-  height: 650px;
+  height: 300px;
   width: 100%;
   background-image: url('/images/border.png');
   background-repeat: repeat-x;
@@ -5632,10 +5662,16 @@ li.nav_link {
   padding: 25px; }
 
 .vertical-line {
-  width: 5px;
-  background-color: #1ACDCC;
-  height: 100%;
-  border-collapse: separate; }
+  border-left: 3px solid #1ACDCC;
+  padding-left: 30px; }
+
+#bottom_two {
+  border-left: 3px solid #1ACDCC;
+  padding-left: 30px; }
+
+#bottom_three {
+  border-left: 3px solid #1ACDCC;
+  padding-left: 30px; }
 
 .bottom_block li a {
   font-size: 15px;
@@ -5649,12 +5685,16 @@ li.nav_tab:hover {
     color: #fff; }
 
 footer {
-  background-color: #2B2D33;
+  background-color: #1ACDCC;
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  height: 100px;
+  height: 42px; }
+
+.footer_tag {
   text-align: center;
-  font-size: 12px;
-  margin-top: 150px;
-  color: #1ACDCC;
-  padding-top: 30px;
-  text-transform: uppercase; }
+  font-size: 16px;
+  margin-top: 10px;
+  color: #2B2D33;
+  text-transform: uppercase;
+  font-weight: 700; }

@@ -7,6 +7,8 @@ $font-bold: 700;
 @import "partials/settings";
 @import "../public/bower_components/foundation/scss/foundation.scss";
 
+// START OF PAGE HEADER
+
 header#page_header {
   background-color: $dark-gray;
   height: 150px;
@@ -64,6 +66,16 @@ li.nav_link {
     }
   }
 }
+// END OF PAGE HEADER
+
+
+// START OF CONTENT
+
+.content {
+  height: 750px;
+  width: 100%;
+  background-color: red;
+}
 
 .header_content li a{
   font-size: 13px;
@@ -77,7 +89,6 @@ li.nav_link {
   font-size: 25px;
 }
 
-
 .content_img {
   background-image: url('/images/scenery.png');
   height: 380px;
@@ -86,10 +97,47 @@ li.nav_link {
   background-size: contain;
 }
 
+.content_info ul {
+  font-weight: $font-bold;
+  color: black; //TO-D0 WHY DOESN'T IT TURN BLACK!!!
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.nav_black {
+  padding: 15px;
+  border-bottom: 1px solid $light-blue;
+  background-color: black;
+  list-style-type: none;
+}
+
+.nav_content {
+  padding: 15px;
+  border-bottom: 1px solid gray;
+  background-color: $light-blue;
+  list-style-type: none;
+}
+
+li.nav_content span.hover_color {
+  margin-right: -20px;
+  padding-right: 22px;
+
+  
+  &:hover {
+    border-color: #fff;
+    color: #fff;
+    // span.hover_color {
+    //   color: #fff;
+    // }
+  }
+}
+// END OF CONTENT
+
+// START OF THREE CONTENT
 
 #three_content{
   background-color: #2B2D33;
-  height: 650px;
+  height: 300px;
   width: 100%;
   background-image: url('/images/border.png');
   background-repeat: repeat-x;
@@ -102,11 +150,19 @@ li.nav_link {
 
 }
 
-.vertical-line {
-  width: 5px;
-  background-color: $light-blue;
-  height: 100%;
-  border-collapse: separate;
+.vertical-line { // TO DO - TRY BE DRY!
+  border-left: 3px solid $light-blue;
+  padding-left: 30px;
+}
+
+#bottom_two {  // TO DO - TRY BE DRY!
+  border-left: 3px solid $light-blue;
+  padding-left: 30px;
+}
+
+#bottom_three {  // TO DO - TRY BE DRY!
+  border-left: 3px solid $light-blue;
+  padding-left: 30px;
 }
 
 .bottom_block li a{
@@ -123,24 +179,25 @@ li.nav_link {
       color: #fff;
     }
   }
+// END OF THREE CONTENT
 
-footer {
-  background-color: $dark-gray;
+// START FOOTER
+footer{
+  background-color: $light-blue;
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  height: 100px;
-  text-align: center;
-  font-size: 12px;
-  margin-top: 150px;
-  color: $light-blue;
-  padding-top: 30px;
-  text-transform: uppercase;
+  height: 42px;
 }
 
-
-
-
-
-
-
+.footer_tag{
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+  color: $dark-gray;
+  text-transform: uppercase;
+  font-weight: $font-bold;
+}
+// END FOOTER
 
 
