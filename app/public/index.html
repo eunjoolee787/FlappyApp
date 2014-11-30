@@ -8,83 +8,106 @@
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-  <header id="pageHeader">
-    <div class="logoImg"></div>
 
-    <nav class="top-bar" data-topbar role="navigation">
-      <section class="top-bar-section">
-        <ul>
-          <li><a href="#"></a>ABOUT</li>
-          <li><a href="Active">SPECS</a></li>
-          <li><a href="#"></a>PRICING</li>
-          <li><a href="#"></a>CONTACT</li>
-          <li><a href="#"></a>SIGN UP</li>
-        </ul>
-      </section> <!-- end of top-bar-section -->
-    </nav> <!-- end of top-bar -->
-  </header> <!-- end of pageHeader -->
 
-  <div class="content">
-    <div class="large-8 medium-9 small-9 columns">
-      <div class="birdImg">
-      </div> <!-- end of .birdImg -->
-    </div> <!-- end of large, medium, small -->
-
-    <div class="large-4 medium-3 small-3 columns">
-      <div class="contentInfo">
-      <ul>
-        <li><a href="Acitve">FEATURES</a></li>
-        <li><a href="#"></a>23 DIFFERENT MODES</li>
-        <li><a href="#"></a>500 OPTIONS</li>
-        <li><a href="#">OVER 9000 POINTS</a></li>
-        <li><a href="#"></a>2X THE FLAPPINESS OF V1</li>
-      </ul>
-      </div> <!-- end of .contentInfo -->
-    </div> <!-- end of large, medium, small -->
-
-  <div class="text">
+<!-- START OF PAGE HEADER -->
+  <header id="page_header">
     <div class="row">
-      <div="large-12 medium-12 small-6 columns">
+      <div class="large-6 medium-6 small-6 columns">
+        <div class="title">
+          <h1><span>flappy</span>app</h1>
+          <div class="bird_img"></div>
+        </div> <!-- end of bird_img -->
+        <!-- BIRD IMG -->
+      </div> <!-- end of .logo_img -->
+      
+      <div class="large-6 medium-6 small-6 columns">
+        <div class="header_content">
+            <ul>
+              <li class="nav_link"><a href="#">about</a></li>
+              <li class="nav_link"><a href="#">specs</a></li>
+              <li class="nav_link"><a href="#">pricing</a></li>
+              <li class="nav_link"><a href="#">contact</a></li>
+              <li class="nav_link"><a href="#">sign up</a></li>
+            </ul>
+        </div> <!-- end of .header_content -->
+      </div> <!-- end of .header_content -->
+    </div>
+
+  </header> <!-- end of #pageHeader -->
+<!-- END OF PAGE HEADER -->
+
+
+<!-- START OF CONTENT -->
+  <div class="content"> 
+  
+    <div class="row">
+      <div class="large-6 medium-6 small-6 columns">
+        <div class="content_img">
+        </div> <!-- end of .birdImg -->
+      </div> <!-- end of large, medium, small -->
+
+      <div class="large-6 medium-6 small-6 columns">
+        <div class="content_info">
+          <ul>
+            <li><a href="Acitve">features</a></li>
+            <li><a href="#"></a><span class="hover_color">23</span> different modes</li>
+            <li><a href="#"></a><span class="hover_color">500 options</span></li>
+            <li><a href="#">over<span class="hover_color">9000</span> points</a></li>
+            <li><a href="#"></a><span class="hover_color">2X</span> the flappiness of V1</li>
+          </ul>
+        </div> <!-- end of .contentInfo -->
+      </div> <!-- end of large, medium, small -->
+
+      <div class="large-12 medium-12 small-12 columns">
         <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum molestias impedit ad, illo nostrum quis natus sequi nesciunt eum consequatur labore odit quidem dolor nobis similique sapiente pariatur, deserunt aliquid.       
         </p> <!-- end of .lorem -->
-      </div> <!-- end of .row   -->
-    </div>  <!-- end of .text -->
- </div> <!-- end of .content -->
+      </div> <!-- end of large, medium, small -->
+   </div> <!-- end of .row -->
+<!-- END OF CONTENT -->
 
-  <div id="threeContent">
+
+<!-- START OF THREE CONTENT -->
+  <div id="three_content">
+  
+  <div class="row">
     <div class="large-4 medium-4 small-4 columns">
-      <div class="bottomOne">
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">SPECS</a></li>
-        <li><a href="#">PRICING</a></li>
-        <li><a href="#">CONTACT</a></li>
-        <li><a href="#">SIGN UP</a></li>
-      </div> <!-- end of .bottomOne -->
+      <div id="bottom_one" class="bottom_block vertical-line">
+        <li class="nav_tab"><a href="#">about</a></li>
+        <li class="nav_tab"><a href="#">specs</a></li>
+        <li class="nav_tab"><a href="#">pricing</a></li>
+        <li class="nav_tab"><a href="#">contact</a></li>
+        <li class="nav_tab"><a href="#">sign up</a></li>
+      </div> <!-- end of .bottomOne & .bottom_block-->
     </div> <!-- end of large, medium, small -->
 
   <div class="large-4 medium-4 small-4 columns">
-    <div class="bottomTwo">
-      <li><a href="#">COMMERCIAL LICENSES</a></li>
-      <li><a href="ACTIVE">EDUCATION</a></li>
-      <li><a href="#">CASE STUDIES</a></li>
-      <li><a href="#">DEVELOPER TOOLS</a></li>
-      <li><a href="#">DOCUMENTATION</a></li>
-    </div> <!-- end of .bottomTwo -->
+    <div id="bottom_two" class="bottom_block">
+      <li class="nav_tab"><a href="#">commerical licenses</a></li>
+      <li class="nav_tab"><a href="ACTIVE">education</a></li>
+      <li class="nav_tab"><a href="#">case studies</a></li>
+      <li class="nav_tab"><a href="#">developer tools</a></li>
+      <li class="nav_tab"><a href="#">documentation</a></li>
+    </div> <!-- end of .bottomTwo & .bottom_block-->
   </div> <!-- end of large, medium, small -->
 
   <div class="large-4 medium-4 small-4 columns">  
-      <div class="bottomThree">
-        <li><a href="#">TUTORIALS</a></li>
-        <li><a href="#">EVENTS</a></li>
-        <li><a href="#">BLOG</a></li>
-        <li><a href="#">SOCIAL MEDIA</a></li>
-        <li><a href="#">PARTNERS</a></li>
-      </div> <!-- end of .bottomThree -->
+      <div id="bottom_three" class="bottom_block">
+        <li class="nav_tab"><a href="#">tutorials</a></li>
+        <li class="nav_tab"><a href="#">events</a></li>
+        <li class="nav_tab"><a href="#">blog</a></li>
+        <li class="nav_tab"><a href="#">social media</a></li>
+        <li class="nav_tab"><a href="#">partners</a></li>
+      </div> <!-- end of .bottomThree & .bottom_block-->
     </div> <!-- end of large, medium, small --> 
-  </div> <!-- end of .threeContent -->
-
+  
+  </div> <!-- end of .row -->
+</div> <!-- end of #threeContent -->
+  
+<!-- END OF THREE CONTENT -->
+ 
   <footer>
-    <p class="footer_title">@2014 FLAPPY INC.</p>
+    <p class="footer">@2014 flappy inc.</p>
   </footer>
 
   <script src="/bower_components/foundation/js/vendor/jquery.js"></script>
