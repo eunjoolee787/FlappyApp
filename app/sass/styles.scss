@@ -1,6 +1,9 @@
 @import "partials/settings";
 @import "../public/bower_components/foundation/scss/foundation.scss";
 
-h1{
-  color: red;
+header#pageHeader {
+  padding: 100px 0 0;
+  background-color: blue;
+  background-image: url('/layout/images/border.png');
 }
+

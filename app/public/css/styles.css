@@ -5556,5 +5556,7 @@ th.hide-for-touch {
   th.show-for-print {
     display: table-cell !important; } }
 
-h1 {
-  color: red; }
+header#pageHeader {
+  padding: 100px 0 0;
+  background-color: blue;
+  background-image: url('/layout/images/border.png'); }
