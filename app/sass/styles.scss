@@ -32,7 +32,7 @@ header#page_header {
   width: 100%;
   background-image: url('/images/border.png');
   background-repeat: repeat-x;
-  @include box-shadow();
+  @include box-shadow();git s
   
   .title h1{
     color: $light-blue;
