@@ -3,9 +3,13 @@ $light-blue: #1ACDCC;
 $dark-gray: #2B2D33;
 //font weight
 $font-bold: 700;
+//TO DO-create mixin for box shawoding
+//TO DO-include mixin for header, main img & feature lists.
 
+@import "http://fonts.googleapis.com/css?family=Lato:300,700.css";
 @import "partials/settings";
 @import "../public/bower_components/foundation/scss/foundation.scss";
+
 
 // START OF PAGE HEADER
 
@@ -15,25 +19,20 @@ header#page_header {
   width: 100%;
   background-image: url('/images/border.png');
   background-repeat: repeat-x;
-  .title{
-    height: 150px;
-    width: 600px;
-    margin: 0 auto;
-    position: relative;
 
-    h1{
-      color: $light-blue;
-      font-size: 50px;
-      text-transform: uppercase;
-      display: inline-block;
-      span {
-        margin-right: 95px;
-      }
-    }  
-  } //end of header#page_header
-}
+  .title h1{
+    color: $light-blue;
+    font-size: 80px;
+    text-transform: uppercase;
+    display: inline-block;
+    background-color: red;
+    span {
+      margin-right: 95px;
+    }
+  }  
+} //end of header#page_header
 
-.bird_img {
+.bird_img { //TO DO-add box shadowing
   background-image: url('/images/logo.png');
   height: 80px;
   width: 100%;
@@ -53,10 +52,11 @@ header#page_header {
 li.nav_link {
   display: inline-block;
   letter-spacing: 2px;
-  border-bottom: 2px solid $light-blue;
+  border-bottom: 5px solid $light-blue;
   margin-right: -5px;
   padding-right: 22px;
   padding-left: 0px;
+  padding-bottom: 10px;
 
   &:hover {
     border-color: #fff;
@@ -73,7 +73,7 @@ li.nav_link {
 
 .content {
   height: 750px;
-  width: 100%;
+  //width: 100%;
   background-color: red;
 }
 
@@ -102,35 +102,34 @@ li.nav_link {
   color: black; //TO-D0 WHY DOESN'T IT TURN BLACK!!!
   text-transform: uppercase;
   text-align: center;
-}
 
-.nav_black {
-  padding: 15px;
-  border-bottom: 1px solid $light-blue;
-  background-color: black;
-  list-style-type: none;
-}
+  li {
+    &.nav_black {
+      padding: 15px;
+      border-bottom: 1px solid $light-blue;
+      background-color: black;
+      list-style-type: none;
+    }
 
-.nav_content {
-  padding: 15px;
-  border-bottom: 1px solid gray;
-  background-color: $light-blue;
-  list-style-type: none;
-}
+    &.nav_content {
+      padding: 15px;
+      border-bottom: 1px solid gray;
+      background-color: $light-blue;
+      list-style-type: none;
 
-li.nav_content span.hover_color {
-  margin-right: -20px;
-  padding-right: 22px;
-
-  
-  &:hover {
-    border-color: #fff;
-    color: #fff;
-    // span.hover_color {
-    //   color: #fff;
-    // }
+      a {
+        color: black;
+        
+        span.hover_color {
+          margin-right: -20px;
+          padding-right: 22px;
+          color: #fff;
+        }
+      }
+    }
   }
 }
+
 // END OF CONTENT
 
 // START OF THREE CONTENT
@@ -144,11 +143,10 @@ li.nav_content span.hover_color {
   padding-top: 50px;
 }
 
-.row {
-  list-style-type: none;
-  padding: 25px;
-
-}
+// .row {
+//   list-style-type: none;
+//   padding: 25px;
+// }
 
 .vertical-line { // TO DO - TRY BE DRY!
   border-left: 3px solid $light-blue;
@@ -172,21 +170,25 @@ li.nav_content span.hover_color {
   letter-spacing: 2px;
 }
 
-  li.nav_tab:hover {
+li.nav_tab {
+  list-style-type: none;
+
+  &:hover {
     border-color: #fff;
 
     a {
       color: #fff;
     }
   }
+}
 // END OF THREE CONTENT
 
 // START FOOTER
 footer{
   background-color: $light-blue;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  //position: fixed;
+  //bottom: 0;
+  // width: 100%;
   height: 42px;
 }
 

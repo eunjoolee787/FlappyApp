@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,700.css);
 meta.foundation-version {
   font-family: "/5.4.7/"; }
 
@@ -40,7 +41,7 @@ body {
   color: #222;
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1.5;
@@ -100,7 +101,7 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 62.5rem; }
+  max-width: 71.875rem; }
   .row:before, .row:after {
     content: " ";
     display: table; }
@@ -868,7 +869,7 @@ select {
       color: #222222;
       padding: 1rem;
       display: block;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: "Lato", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
       font-size: 1rem; }
       .accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
         background: #e3e3e3; }
@@ -1261,7 +1262,7 @@ button, .button {
   border-style: solid;
   border-width: 0px;
   cursor: pointer;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -2487,7 +2488,7 @@ select {
   border-color: #cccccc;
   padding: 0.5rem;
   font-size: 0.875rem;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   color: rgba(0, 0, 0, 0.75);
   line-height: normal;
   border-radius: 0;
@@ -2893,7 +2894,7 @@ label.error {
 
 .label {
   font-weight: normal;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   text-align: center;
   text-decoration: none;
   line-height: 1;
@@ -3273,7 +3274,7 @@ ul.pagination {
     color: #EEEEEE;
     font-weight: normal;
     font-size: 1rem;
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+    font-family: "Lato", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
   .pricing-table .price {
     background-color: #F6F6F6;
     padding: 0.9375rem 1.25rem;
@@ -3281,7 +3282,7 @@ ul.pagination {
     color: #333333;
     font-weight: normal;
     font-size: 2rem;
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+    font-family: "Lato", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
   .pricing-table .description {
     background-color: #FFFFFF;
     padding: 0.9375rem;
@@ -3453,7 +3454,7 @@ ul.pagination {
   @media only screen and (min-width:40.063em) {
     .reveal-modal {
       width: 80%;
-      max-width: 62.5rem;
+      max-width: 71.875rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
@@ -3469,35 +3470,35 @@ ul.pagination {
   @media only screen and (min-width:40.063em) {
     .reveal-modal.tiny {
       width: 30%;
-      max-width: 62.5rem;
+      max-width: 71.875rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
   @media only screen and (min-width:40.063em) {
     .reveal-modal.small {
       width: 40%;
-      max-width: 62.5rem;
+      max-width: 71.875rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
   @media only screen and (min-width:40.063em) {
     .reveal-modal.medium {
       width: 60%;
-      max-width: 62.5rem;
+      max-width: 71.875rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
   @media only screen and (min-width:40.063em) {
     .reveal-modal.large {
       width: 70%;
-      max-width: 62.5rem;
+      max-width: 71.875rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
   @media only screen and (min-width:40.063em) {
     .reveal-modal.xlarge {
       width: 95%;
-      max-width: 62.5rem;
+      max-width: 71.875rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
@@ -3512,7 +3513,7 @@ ul.pagination {
     @media only screen and (min-width:40.063em) {
       .reveal-modal.full {
         width: 100vw;
-        max-width: 62.5rem;
+        max-width: 71.875rem;
         left: 0;
         right: 0;
         margin: 0 auto; } }
@@ -3553,7 +3554,7 @@ dialog {
   padding: 0.875rem 0;
   list-style-type: none;
   list-style-position: outside;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+  font-family: "Lato", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
   .side-nav li {
     margin: 0 0 0.4375rem 0;
     font-size: 0.875rem;
@@ -3569,7 +3570,7 @@ dialog {
     .side-nav li.active > a:first-child:not(.button) {
       color: #1ccaff;
       font-weight: normal;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+      font-family: "Lato", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
     .side-nav li.divider {
       border-top: 1px solid;
       height: 0;
@@ -3677,7 +3678,7 @@ dialog {
     display: inline;
     margin-left: 1rem;
     margin-bottom: 0;
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     font-weight: normal;
     font-size: 0.875rem;
     color: #999999; }
@@ -3848,7 +3849,7 @@ table {
       background-color: #EFEFEF;
       color: #222222;
       padding: 1rem 2rem;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: "Lato", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
       font-size: 1rem; }
       .tabs dd > a:hover, .tabs .tab-title > a:hover {
         background-color: #e1e1e1; }
@@ -4146,7 +4147,7 @@ meta.foundation-mq-topbar {
       color: #FFFFFF;
       padding: 12px 0 12px 0;
       padding-left: 15px;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: "Lato", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
       font-size: 0.8125rem;
       font-weight: normal;
       text-transform: none; }
@@ -4342,7 +4343,7 @@ meta.foundation-mq-topbar {
     .top-bar.expanded {
       background: #333333; }
   .contain-to-grid .top-bar {
-    max-width: 62.5rem;
+    max-width: 71.875rem;
     margin: 0 auto;
     margin-bottom: 0; }
   .top-bar-section {
@@ -4633,7 +4634,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #222222;
@@ -5562,18 +5563,14 @@ header#page_header {
   width: 100%;
   background-image: url('/images/border.png');
   background-repeat: repeat-x; }
-  header#page_header .title {
-    height: 150px;
-    width: 600px;
-    margin: 0 auto;
-    position: relative; }
-    header#page_header .title h1 {
-      color: #1ACDCC;
-      font-size: 50px;
-      text-transform: uppercase;
-      display: inline-block; }
-      header#page_header .title h1 span {
-        margin-right: 95px; }
+  header#page_header .title h1 {
+    color: #1ACDCC;
+    font-size: 80px;
+    text-transform: uppercase;
+    display: inline-block;
+    background-color: red; }
+    header#page_header .title h1 span {
+      margin-right: 95px; }
 
 .bird_img {
   background-image: url('/images/logo.png');
@@ -5593,10 +5590,11 @@ header#page_header {
 li.nav_link {
   display: inline-block;
   letter-spacing: 2px;
-  border-bottom: 2px solid #1ACDCC;
+  border-bottom: 5px solid #1ACDCC;
   margin-right: -5px;
   padding-right: 22px;
-  padding-left: 0px; }
+  padding-left: 0px;
+  padding-bottom: 10px; }
   li.nav_link:hover {
     border-color: #fff; }
     li.nav_link:hover a {
@@ -5604,7 +5602,6 @@ li.nav_link {
 
 .content {
   height: 750px;
-  width: 100%;
   background-color: red; }
 
 .header_content li a {
@@ -5629,25 +5626,22 @@ li.nav_link {
   color: black;
   text-transform: uppercase;
   text-align: center; }
-
-.nav_black {
-  padding: 15px;
-  border-bottom: 1px solid #1ACDCC;
-  background-color: black;
-  list-style-type: none; }
-
-.nav_content {
-  padding: 15px;
-  border-bottom: 1px solid gray;
-  background-color: #1ACDCC;
-  list-style-type: none; }
-
-li.nav_content span.hover_color {
-  margin-right: -20px;
-  padding-right: 22px; }
-  li.nav_content span.hover_color:hover {
-    border-color: #fff;
-    color: #fff; }
+  .content_info ul li.nav_black {
+    padding: 15px;
+    border-bottom: 1px solid #1ACDCC;
+    background-color: black;
+    list-style-type: none; }
+  .content_info ul li.nav_content {
+    padding: 15px;
+    border-bottom: 1px solid gray;
+    background-color: #1ACDCC;
+    list-style-type: none; }
+    .content_info ul li.nav_content a {
+      color: black; }
+      .content_info ul li.nav_content a span.hover_color {
+        margin-right: -20px;
+        padding-right: 22px;
+        color: #fff; }
 
 #three_content {
   background-color: #2B2D33;
@@ -5656,10 +5650,6 @@ li.nav_content span.hover_color {
   background-image: url('/images/border.png');
   background-repeat: repeat-x;
   padding-top: 50px; }
-
-.row {
-  list-style-type: none;
-  padding: 25px; }
 
 .vertical-line {
   border-left: 3px solid #1ACDCC;
@@ -5679,16 +5669,15 @@ li.nav_content span.hover_color {
   text-transform: uppercase;
   letter-spacing: 2px; }
 
-li.nav_tab:hover {
-  border-color: #fff; }
-  li.nav_tab:hover a {
-    color: #fff; }
+li.nav_tab {
+  list-style-type: none; }
+  li.nav_tab:hover {
+    border-color: #fff; }
+    li.nav_tab:hover a {
+      color: #fff; }
 
 footer {
   background-color: #1ACDCC;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
   height: 42px; }
 
 .footer_tag {
