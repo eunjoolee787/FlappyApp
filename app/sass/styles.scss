@@ -10,23 +10,18 @@ $font-bold: 700;
 @import "partials/settings";
 @import "../public/bower_components/foundation/scss/foundation.scss";
 
-// @mixin box-shadow($radius: 10px){ //TO DO - not working
-// -webkit-box-shadow: 10px 10px 138px -24px rgba(112,108,112,1);
-// -moz-box-shadow: 10px 10px 138px -24px rgba(112,108,112,1);
-// box-shadow: 10px 10px 138px -24px rgba(112,108,112,1);
+
+// @mixin box-shadow($inset, $horizontal, $vertical, $blur, $spread, $color) {
+// -webkit-box-shadow: $inset $horizontal $vertical $blur $spread $color;
+// -moz-box-shadow: $inset $horizontal $vertical $blur $spread $color;
+// box-shadow: $inset $horizontal $vertical $blur $spread $color;
 // }
 
-// @mixin box-shadow($radius: 10px){
-//   -webkit-box-shadow:inset    10px #808080;
-// box-shadow:inset   10px #808080;
-// }
-// START OF PAGE HEADER
 
-@mixin border-radius($radius: 10px) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
+@mixin box-shadow($horizontal, $vertical, $blur, $spread, $color){
+-webkit-box-shadow: $horizontal $vertical $blur $spread $color;
+-moz-box-shadow: $horizontal $vertical $blur $spread $color;
+box-shadow: $horizontal $vertical $blur $spread $color;
 }
 
 header#page_header {
@@ -35,7 +30,7 @@ header#page_header {
   width: 100%;
   background-image: url('/images/border.png');
   background-repeat: repeat-x;
-  //@include box-shadow(); //TO DO - not working
+  @include box-shadow(0, 0, 5px, 3px, #ccc7cf);
   
   .title h1{
     color: $light-blue;
@@ -121,11 +116,11 @@ header#page_header {
 
 .content_img {
   background-image: url('/images/scenery.png');
-  height: 300px;
+  height: 270px;
   width: 100%;
   background-repeat: no-repeat;
   background-size: contain;
-  //box-shadow: inset 5px 5px  black, 5px 5px black;
+  @include box-shadow(0, 0, 8px, 5px, #18191a);
   //background-color: pink;
 }
 
@@ -134,13 +129,13 @@ header#page_header {
   color: black; //TO-D0 WHY DOESN'T IT TURN BLACK!!!
   text-transform: uppercase;
   text-align: center;
-
+  @include box-shadow(0, 0, 5px, 3px, #dbd4d7);
 
   li {
     &.nav_black {
       padding: 15px;
       border-bottom: 1px solid $light-blue;
-      background-color: black;
+      background-color: $dark-gray;
       list-style-type: none;
       a {
         color: $light-blue;
@@ -196,7 +191,7 @@ header#page_header {
 
 .bottom_block {
   border-left: 3px solid $light-blue;
-  padding-left: 25px;
+  padding-left: 20px;
 
   li {
     list-style-type: none;

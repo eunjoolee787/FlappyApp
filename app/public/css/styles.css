@@ -5562,7 +5562,10 @@ header#page_header {
   height: 150px;
   width: 100%;
   background-image: url('/images/border.png');
-  background-repeat: repeat-x; }
+  background-repeat: repeat-x;
+  -webkit-box-shadow: 0 0 5px 3px #ccc7cf;
+  -moz-box-shadow: 0 0 5px 3px #ccc7cf;
+  box-shadow: 0 0 5px 3px #ccc7cf; }
   header#page_header .title h1 {
     color: #1ACDCC;
     font-size: 55px;
@@ -5616,20 +5619,26 @@ header#page_header {
 
 .content_img {
   background-image: url('/images/scenery.png');
-  height: 300px;
+  height: 270px;
   width: 100%;
   background-repeat: no-repeat;
-  background-size: contain; }
+  background-size: contain;
+  -webkit-box-shadow: 0 0 8px 5px #18191a;
+  -moz-box-shadow: 0 0 8px 5px #18191a;
+  box-shadow: 0 0 8px 5px #18191a; }
 
 .content_info ul {
   font-weight: 700;
   color: black;
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  -webkit-box-shadow: 0 0 5px 3px #dbd4d7;
+  -moz-box-shadow: 0 0 5px 3px #dbd4d7;
+  box-shadow: 0 0 5px 3px #dbd4d7; }
   .content_info ul li.nav_black {
     padding: 15px;
     border-bottom: 1px solid #1ACDCC;
-    background-color: black;
+    background-color: #2B2D33;
     list-style-type: none; }
     .content_info ul li.nav_black a {
       color: #1ACDCC; }
@@ -5665,7 +5674,7 @@ header#page_header {
 
 .bottom_block {
   border-left: 3px solid #1ACDCC;
-  padding-left: 25px; }
+  padding-left: 20px; }
   .bottom_block li {
     list-style-type: none; }
     .bottom_block li:hover {
