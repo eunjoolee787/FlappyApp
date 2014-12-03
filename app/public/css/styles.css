@@ -5557,6 +5557,15 @@ th.hide-for-touch {
   th.show-for-print {
     display: table-cell !important; } }
 
+body {
+  background-color: red; }
+  @media only screen and (max-width: 40em) {
+    body {
+      background-color: purple; } }
+  @media only screen and (min-width:64.063em) {
+    body {
+      background-color: green; } }
+
 header#page_header {
   background-color: #2B2D33;
   height: 150px;
@@ -5622,19 +5631,20 @@ header#page_header {
   height: 270px;
   width: 100%;
   background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-box-shadow: 0 0 8px 5px #18191a;
-  -moz-box-shadow: 0 0 8px 5px #18191a;
-  box-shadow: 0 0 8px 5px #18191a; }
+  background-size: cover;
+  background-position: center right;
+  -webkit-box-shadow: 0 0 5px 3px #ccc7cf;
+  -moz-box-shadow: 0 0 5px 3px #ccc7cf;
+  box-shadow: 0 0 5px 3px #ccc7cf; }
 
 .content_info ul {
   font-weight: 700;
   color: black;
   text-transform: uppercase;
   text-align: center;
-  -webkit-box-shadow: 0 0 5px 3px #dbd4d7;
-  -moz-box-shadow: 0 0 5px 3px #dbd4d7;
-  box-shadow: 0 0 5px 3px #dbd4d7; }
+  -webkit-box-shadow: 0 0 5px 3px #ccc7cf;
+  -moz-box-shadow: 0 0 5px 3px #ccc7cf;
+  box-shadow: 0 0 5px 3px #ccc7cf; }
   .content_info ul li.nav_black {
     padding: 15px;
     border-bottom: 1px solid #1ACDCC;

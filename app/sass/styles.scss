@@ -10,18 +10,20 @@ $font-bold: 700;
 @import "partials/settings";
 @import "../public/bower_components/foundation/scss/foundation.scss";
 
+@mixin box-shadow(){
+  -webkit-box-shadow: 0 0 5px 3px #ccc7cf;
+  -moz-box-shadow: 0 0 5px 3px #ccc7cf;
+  box-shadow: 0 0 5px 3px #ccc7cf;
+}
 
-// @mixin box-shadow($inset, $horizontal, $vertical, $blur, $spread, $color) {
-// -webkit-box-shadow: $inset $horizontal $vertical $blur $spread $color;
-// -moz-box-shadow: $inset $horizontal $vertical $blur $spread $color;
-// box-shadow: $inset $horizontal $vertical $blur $spread $color;
-// }
-
-
-@mixin box-shadow($horizontal, $vertical, $blur, $spread, $color){
--webkit-box-shadow: $horizontal $vertical $blur $spread $color;
--moz-box-shadow: $horizontal $vertical $blur $spread $color;
-box-shadow: $horizontal $vertical $blur $spread $color;
+body {
+  background-color: red;
+  @media #{$small-only} {
+    background-color: purple;
+  }
+  @media #{$large-up} {
+    background-color: green;
+  }
 }
 
 header#page_header {
@@ -30,7 +32,7 @@ header#page_header {
   width: 100%;
   background-image: url('/images/border.png');
   background-repeat: repeat-x;
-  @include box-shadow(0, 0, 5px, 3px, #ccc7cf);
+  @include box-shadow();
   
   .title h1{
     color: $light-blue;
@@ -119,8 +121,9 @@ header#page_header {
   height: 270px;
   width: 100%;
   background-repeat: no-repeat;
-  background-size: contain;
-  @include box-shadow(0, 0, 8px, 5px, #18191a);
+  background-size: cover;
+  background-position: center right;
+  @include box-shadow();
   //background-color: pink;
 }
 
@@ -129,7 +132,7 @@ header#page_header {
   color: black; //TO-D0 WHY DOESN'T IT TURN BLACK!!!
   text-transform: uppercase;
   text-align: center;
-  @include box-shadow(0, 0, 5px, 3px, #dbd4d7);
+  @include box-shadow();
 
   li {
     &.nav_black {
