@@ -5565,58 +5565,58 @@ header#page_header {
   background-repeat: repeat-x; }
   header#page_header .title h1 {
     color: #1ACDCC;
-    font-size: 80px;
+    font-size: 55px;
     text-transform: uppercase;
     display: inline-block;
-    background-color: red; }
+    font-weight: 700;
+    letter-spacing: 5px;
+    margin-left: 6px;
+    padding-top: 20px; }
     header#page_header .title h1 span {
-      margin-right: 95px; }
+      margin-right: 70px; }
 
 .bird_img {
   background-image: url('/images/logo.png');
-  height: 80px;
+  height: 70px;
   width: 100%;
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  top: 0px;
-  left: 170px; }
+  top: 25px;
+  left: 235px; }
 
-.header_content li {
-  display: inline-block;
-  margin-right: 20px;
-  padding-top: 30px; }
-
-li.nav_link {
-  display: inline-block;
-  letter-spacing: 2px;
-  border-bottom: 5px solid #1ACDCC;
-  margin-right: -5px;
-  padding-right: 22px;
-  padding-left: 0px;
-  padding-bottom: 10px; }
-  li.nav_link:hover {
-    border-color: #fff; }
-    li.nav_link:hover a {
-      color: #fff; }
+.header_content {
+  padding-top: 40px; }
+  .header_content ul {
+    float: right; }
+    .header_content ul li.nav_link {
+      letter-spacing: 1px;
+      display: block;
+      float: left; }
+      .header_content ul li.nav_link#about_nav_link a {
+        padding-left: 5px; }
+      .header_content ul li.nav_link a {
+        font-size: 14px;
+        color: #1ACDCC;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding-right: 18px;
+        padding-left: 18px;
+        padding-bottom: 10px;
+        display: block;
+        border-bottom: 5px solid #1ACDCC;
+        letter-spacing: 2px; }
+        .header_content ul li.nav_link a:hover {
+          border-color: #fff;
+          color: #fff; }
 
 .content {
   height: 750px;
-  background-color: red; }
-
-.header_content li a {
-  font-size: 13px;
-  color: #1ACDCC;
-  text-transform: uppercase;
-  font-weight: 700; }
-
-.lorem {
-  font-weight: 700;
-  font-size: 25px; }
+  padding-top: 25px; }
 
 .content_img {
   background-image: url('/images/scenery.png');
-  height: 380px;
+  height: 300px;
   width: 100%;
   background-repeat: no-repeat;
   background-size: contain; }
@@ -5631,17 +5631,29 @@ li.nav_link {
     border-bottom: 1px solid #1ACDCC;
     background-color: black;
     list-style-type: none; }
+    .content_info ul li.nav_black a {
+      color: #1ACDCC; }
   .content_info ul li.nav_content {
     padding: 15px;
     border-bottom: 1px solid gray;
     background-color: #1ACDCC;
-    list-style-type: none; }
+    list-style-type: none;
+    letter-spacing: 2px;
+    font-size: 15px; }
+    .content_info ul li.nav_content a {
+      font-weight: 700; }
+    .content_info ul li.nav_content .white_color {
+      color: #fff; }
     .content_info ul li.nav_content a {
       color: black; }
       .content_info ul li.nav_content a span.hover_color {
         margin-right: -20px;
         padding-right: 22px;
         color: #fff; }
+
+.lorem {
+  font-weight: 700;
+  font-size: 25px; }
 
 #three_content {
   background-color: #2B2D33;
@@ -5651,39 +5663,32 @@ li.nav_link {
   background-repeat: repeat-x;
   padding-top: 50px; }
 
-.vertical-line {
+.bottom_block {
   border-left: 3px solid #1ACDCC;
-  padding-left: 30px; }
-
-#bottom_two {
-  border-left: 3px solid #1ACDCC;
-  padding-left: 30px; }
-
-#bottom_three {
-  border-left: 3px solid #1ACDCC;
-  padding-left: 30px; }
-
-.bottom_block li a {
-  font-size: 15px;
-  color: #1ACDCC;
-  text-transform: uppercase;
-  letter-spacing: 2px; }
-
-li.nav_tab {
-  list-style-type: none; }
-  li.nav_tab:hover {
-    border-color: #fff; }
-    li.nav_tab:hover a {
-      color: #fff; }
+  padding-left: 25px; }
+  .bottom_block li {
+    list-style-type: none; }
+    .bottom_block li:hover {
+      border-color: #fff; }
+    .bottom_block li a {
+      font-size: 15px;
+      color: #1ACDCC;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      line-height: 200%; }
+      .bottom_block li a:hover {
+        color: #fff; }
 
 footer {
   background-color: #1ACDCC;
-  height: 42px; }
+  height: 35px; }
 
 .footer_tag {
   text-align: center;
-  font-size: 16px;
-  margin-top: 10px;
+  font-size: 15px;
+  margin-top: 40px;
   color: #2B2D33;
   text-transform: uppercase;
-  font-weight: 700; }
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding-top: 5px; }

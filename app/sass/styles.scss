@@ -10,8 +10,24 @@ $font-bold: 700;
 @import "partials/settings";
 @import "../public/bower_components/foundation/scss/foundation.scss";
 
+// @mixin box-shadow($radius: 10px){ //TO DO - not working
+// -webkit-box-shadow: 10px 10px 138px -24px rgba(112,108,112,1);
+// -moz-box-shadow: 10px 10px 138px -24px rgba(112,108,112,1);
+// box-shadow: 10px 10px 138px -24px rgba(112,108,112,1);
+// }
 
+// @mixin box-shadow($radius: 10px){
+//   -webkit-box-shadow:inset    10px #808080;
+// box-shadow:inset   10px #808080;
+// }
 // START OF PAGE HEADER
+
+@mixin border-radius($radius: 10px) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
 
 header#page_header {
   background-color: $dark-gray;
@@ -19,53 +35,78 @@ header#page_header {
   width: 100%;
   background-image: url('/images/border.png');
   background-repeat: repeat-x;
-
+  //@include box-shadow(); //TO DO - not working
+  
   .title h1{
     color: $light-blue;
-    font-size: 80px;
+    font-size: 55px;
     text-transform: uppercase;
     display: inline-block;
-    background-color: red;
+    font-weight: $font-bold;
+    letter-spacing: 5px;
+    margin-left: 6px;
+    padding-top: 20px;
+    //background-color: red;
     span {
-      margin-right: 95px;
+      margin-right: 70px;
     }
   }  
 } //end of header#page_header
 
 .bird_img { //TO DO-add box shadowing
   background-image: url('/images/logo.png');
-  height: 80px;
+  height: 70px;
   width: 100%;
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  top: 0px;
-  left: 170px;
+  top: 25px;
+  left: 235px;
 } // end of .bird_img
 
-.header_content li {
-  display: inline-block;
-  margin-right: 20px;
-  padding-top: 30px;
-}
+.header_content {
+  //display: inline-block;
+  //margin-right: 20px;
+  padding-top: 40px;
+  //background-color: red;
 
-li.nav_link {
-  display: inline-block;
-  letter-spacing: 2px;
-  border-bottom: 5px solid $light-blue;
-  margin-right: -5px;
-  padding-right: 22px;
-  padding-left: 0px;
-  padding-bottom: 10px;
+  ul {
+    //background-color: green;
+    float: right;
+    
+    li {
+      &.nav_link {
+        letter-spacing: 1px;
+        display: block;
+        float: left;
 
-  &:hover {
-    border-color: #fff;
+        &#about_nav_link a {
+          padding-left: 5px;
+        }
 
-    a {
-      color: #fff;
+        a{
+          font-size: 14px;
+          color: $light-blue;
+          text-transform: uppercase;
+          font-weight: $font-bold;
+          //background-color: pink;
+          padding-right: 18px;
+          padding-left: 18px;
+          padding-bottom: 10px;
+          display: block;
+          border-bottom: 5px solid $light-blue;
+          letter-spacing: 2px;
+          &:hover {
+            border-color: #fff;
+            color: #fff;
+          }
+        }
+      }
     }
   }
-}
+} //end of .header_content
+
+
 // END OF PAGE HEADER
 
 
@@ -74,27 +115,18 @@ li.nav_link {
 .content {
   height: 750px;
   //width: 100%;
-  background-color: red;
-}
-
-.header_content li a{
-  font-size: 13px;
-  color: $light-blue;
-  text-transform: uppercase;
-  font-weight: $font-bold;
-}
-
-.lorem {
-  font-weight: $font-bold;
-  font-size: 25px;
+  //background-color: red;
+  padding-top: 25px;
 }
 
 .content_img {
   background-image: url('/images/scenery.png');
-  height: 380px;
+  height: 300px;
   width: 100%;
   background-repeat: no-repeat;
   background-size: contain;
+  //box-shadow: inset 5px 5px  black, 5px 5px black;
+  //background-color: pink;
 }
 
 .content_info ul {
@@ -103,12 +135,16 @@ li.nav_link {
   text-transform: uppercase;
   text-align: center;
 
+
   li {
     &.nav_black {
       padding: 15px;
       border-bottom: 1px solid $light-blue;
       background-color: black;
       list-style-type: none;
+      a {
+        color: $light-blue;
+      }
     }
 
     &.nav_content {
@@ -116,6 +152,16 @@ li.nav_link {
       border-bottom: 1px solid gray;
       background-color: $light-blue;
       list-style-type: none;
+      letter-spacing: 2px;
+      font-size: 15px;
+
+      a {
+        font-weight: $font-bold;
+      }
+
+      .white_color {
+        color: #fff;
+      }
 
       a {
         color: black;
@@ -130,10 +176,14 @@ li.nav_link {
   }
 }
 
+.lorem {
+  font-weight: $font-bold;
+  font-size: 25px;
+}
 // END OF CONTENT
 
-// START OF THREE CONTENT
 
+// START OF THREE CONTENT
 #three_content{
   background-color: #2B2D33;
   height: 300px;
@@ -141,65 +191,56 @@ li.nav_link {
   background-image: url('/images/border.png');
   background-repeat: repeat-x;
   padding-top: 50px;
+
 }
 
-// .row {
-//   list-style-type: none;
-//   padding: 25px;
-// }
-
-.vertical-line { // TO DO - TRY BE DRY!
+.bottom_block {
   border-left: 3px solid $light-blue;
-  padding-left: 30px;
-}
+  padding-left: 25px;
 
-#bottom_two {  // TO DO - TRY BE DRY!
-  border-left: 3px solid $light-blue;
-  padding-left: 30px;
-}
+  li {
+    list-style-type: none;
 
-#bottom_three {  // TO DO - TRY BE DRY!
-  border-left: 3px solid $light-blue;
-  padding-left: 30px;
-}
-
-.bottom_block li a{
-  font-size: 15px;
-  color: $light-blue;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-li.nav_tab {
-  list-style-type: none;
-
-  &:hover {
-    border-color: #fff;
+    &:hover {
+      border-color: #fff;
+    }
 
     a {
-      color: #fff;
+      font-size: 15px;
+      color: $light-blue;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      line-height: 200%;
+
+      &:hover {
+        color: #fff;
+      }
     }
   }
 }
+
 // END OF THREE CONTENT
 
 // START FOOTER
+
 footer{
   background-color: $light-blue;
   //position: fixed;
   //bottom: 0;
   // width: 100%;
-  height: 42px;
+  height: 35px;
+
 }
 
 .footer_tag{
   text-align: center;
-  font-size: 16px;
-  margin-top: 10px;
+  font-size: 15px;
+  margin-top: 40px;
   color: $dark-gray;
   text-transform: uppercase;
   font-weight: $font-bold;
+  letter-spacing: 2px;
+  padding-top: 5px;
 }
 // END FOOTER
-
 
