@@ -23,5 +23,9 @@ $(function() {
    $("p.lorem").on("mouseleave", "span.bird", function(){
     $(this).html('bird');
   });
+
+  $.get("http://beta.json-generator.com/api/json/get/AydVk97", function(data){
+      console.log(data);
+  });
 });
 
