@@ -5557,54 +5557,92 @@ th.hide-for-touch {
   th.show-for-print {
     display: table-cell !important; } }
 
-body {
-  background-color: red; }
-  @media only screen and (max-width: 40em) {
-    body {
-      background-color: purple; } }
-  @media only screen and (min-width:64.063em) {
-    body {
-      background-color: green; } }
+@media only screen and (min-width:64.063em) {
+  body {
+    background-color: orange; } }
+@media only screen and (min-width:40.063em) and (max-width:64em) {
+  body {
+    background-color: yellow; } }
+@media only screen and (max-width: 40em) {
+  body {
+    background-color: green; } }
 
 header#page_header {
   background-color: #2B2D33;
-  height: 150px;
   width: 100%;
   background-image: url('/images/border.png');
   background-repeat: repeat-x;
   -webkit-box-shadow: 0 0 5px 3px #ccc7cf;
   -moz-box-shadow: 0 0 5px 3px #ccc7cf;
   box-shadow: 0 0 5px 3px #ccc7cf; }
+  @media only screen and (min-width:40.063em) {
+    header#page_header {
+      height: 150px; } }
   header#page_header .title h1 {
     color: #1ACDCC;
-    font-size: 55px;
     text-transform: uppercase;
-    display: inline-block;
     font-weight: 700;
     letter-spacing: 5px;
-    margin-left: 6px;
-    padding-top: 20px; }
-    header#page_header .title h1 span {
-      margin-right: 70px; }
+    background-color: red; }
+    @media only screen and (min-width:64.063em) {
+      header#page_header .title h1 {
+        display: inline-block;
+        margin-left: 6px;
+        padding-top: 30px;
+        font-size: 55px; } }
+    @media only screen and (min-width:40.063em) and (max-width:64em) {
+      header#page_header .title h1 {
+        font-size: 20px; } }
+    @media only screen and (max-width: 40em) {
+      header#page_header .title h1 {
+        font-size: 20px; } }
+    header#page_header .title h1 span.flappy {
+      background-color: green; }
+      @media only screen and (min-width:64.063em) {
+        header#page_header .title h1 span.flappy {
+          margin-right: 70px; } }
+    header#page_header .title h1 span.app {
+      background-color: purple;
+      display: block; }
+      @media only screen and (min-width:40.063em) and (max-width:64em) {
+        header#page_header .title h1 span.app {
+          color: #fff; } }
 
 .bird_img {
   background-image: url('/images/logo.png');
-  height: 70px;
   width: 100%;
+  height: 70px;
   background-repeat: no-repeat;
   background-size: contain;
-  position: absolute;
-  top: 25px;
-  left: 235px; }
+  background-color: pink; }
+  @media only screen and (min-width:64.063em) {
+    .bird_img {
+      top: 35px;
+      left: 235px;
+      position: absolute; } }
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    .bird_img {
+      height: 55px;
+      width: 75%; } }
+  @media only screen and (max-width: 40em) { }
 
 .header_content {
-  padding-top: 40px; }
+  padding-top: 55px; }
+  @media only screen and (min-width:64.063em) { }
+  @media only screen and (min-width:40.063em) and (max-width:64em) { }
+  @media only screen and (max-width: 40em) { }
   .header_content ul {
     float: right; }
+    @media only screen and (max-width: 40em) {
+      .header_content ul {
+        display: none; } }
     .header_content ul li.nav_link {
       letter-spacing: 1px;
       display: block;
       float: left; }
+      @media only screen and (min-width:64.063em) { }
+      @media only screen and (min-width:40.063em) and (max-width:64em) { }
+      @media only screen and (max-width: 40em) { }
       .header_content ul li.nav_link#about_nav_link a {
         padding-left: 5px; }
       .header_content ul li.nav_link a {
@@ -5616,15 +5654,24 @@ header#page_header {
         padding-left: 18px;
         padding-bottom: 10px;
         display: block;
-        border-bottom: 5px solid #1ACDCC;
         letter-spacing: 2px; }
+        @media only screen and (min-width:64.063em) {
+          .header_content ul li.nav_link a {
+            border-bottom: 5px solid #1ACDCC; } }
+        @media only screen and (min-width:40.063em) and (max-width:64em) { }
+        @media only screen and (max-width: 40em) { }
         .header_content ul li.nav_link a:hover {
           border-color: #fff;
           color: #fff; }
 
 .content {
   height: 750px;
-  padding-top: 25px; }
+  padding-top: 50px; }
+  @media only screen and (min-width:64.063em) { }
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    .content {
+      padding-top: 2px; } }
+  @media only screen and (max-width: 40em) { }
 
 .content_img {
   background-image: url('/images/scenery.png');
@@ -5636,6 +5683,12 @@ header#page_header {
   -webkit-box-shadow: 0 0 5px 3px #ccc7cf;
   -moz-box-shadow: 0 0 5px 3px #ccc7cf;
   box-shadow: 0 0 5px 3px #ccc7cf; }
+  @media only screen and (min-width:64.063em) { }
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    .content_img {
+      height: 250px;
+      width: 750px; } }
+  @media only screen and (max-width: 40em) { }
 
 .content_info ul {
   font-weight: 700;
@@ -5685,6 +5738,11 @@ header#page_header {
 .bottom_block {
   border-left: 3px solid #1ACDCC;
   padding-left: 20px; }
+  @media only screen and (min-width:64.063em) { }
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    .bottom_block {
+      border-left: none; } }
+  @media only screen and (max-width: 40em) { }
   .bottom_block li {
     list-style-type: none; }
     .bottom_block li:hover {
@@ -5694,20 +5752,32 @@ header#page_header {
       color: #1ACDCC;
       text-transform: uppercase;
       letter-spacing: 2px;
-      line-height: 200%; }
+      line-height: 200%;
+      font-weight: 700; }
       .bottom_block li a:hover {
         color: #fff; }
 
 footer {
-  background-color: #1ACDCC;
   height: 35px; }
+  @media only screen and (min-width:64.063em) {
+    footer {
+      background-color: #1ACDCC; } }
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    footer {
+      color: #fff; } }
+  @media only screen and (max-width: 40em) { }
 
 .footer_tag {
   text-align: center;
   font-size: 15px;
   margin-top: 40px;
-  color: #2B2D33;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 2px;
   padding-top: 5px; }
+
+@media only screen and (min-width:64.063em) { }
+
+@media only screen and (min-width:40.063em) and (max-width:64em) { }
+
+@media only screen and (max-width: 40em) { }
