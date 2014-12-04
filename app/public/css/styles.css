@@ -5571,54 +5571,61 @@ header#page_header {
   background-color: #2B2D33;
   width: 100%;
   background-image: url('/images/border.png');
-  background-repeat: repeat-x;
-  -webkit-box-shadow: 0 0 5px 3px #ccc7cf;
-  -moz-box-shadow: 0 0 5px 3px #ccc7cf;
-  box-shadow: 0 0 5px 3px #ccc7cf; }
+  background-repeat: repeat-x; }
+  @media only screen and (min-width:64.063em) {
+    header#page_header {
+      -webkit-box-shadow: 0 0 5px 3px #ccc7cf;
+      -moz-box-shadow: 0 0 5px 3px #ccc7cf;
+      box-shadow: 0 0 5px 3px #ccc7cf; } }
   @media only screen and (min-width:40.063em) {
     header#page_header {
       height: 150px; } }
-  header#page_header .title h1 {
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    header#page_header .title {
+      padding-top: 40px;
+      padding-right: 25px; } }
+  header#page_header h1 {
     color: #1ACDCC;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 5px;
-    background-color: red; }
+    float: right;
+    margin-left: 125px; }
     @media only screen and (min-width:64.063em) {
-      header#page_header .title h1 {
+      header#page_header h1 {
         display: inline-block;
         margin-left: 6px;
         padding-top: 30px;
         font-size: 55px; } }
     @media only screen and (min-width:40.063em) and (max-width:64em) {
-      header#page_header .title h1 {
+      header#page_header h1 {
         font-size: 20px; } }
     @media only screen and (max-width: 40em) {
-      header#page_header .title h1 {
+      header#page_header h1 {
         font-size: 20px; } }
-    header#page_header .title h1 span.flappy {
-      background-color: green; }
-      @media only screen and (min-width:64.063em) {
-        header#page_header .title h1 span.flappy {
-          margin-right: 70px; } }
-    header#page_header .title h1 span.app {
-      background-color: purple;
+    @media only screen and (min-width:64.063em) {
+      header#page_header h1 span.flappy {
+        margin-right: 60px; } }
+    header#page_header h1 span.app {
       display: block; }
+      @media only screen and (min-width:64.063em) {
+        header#page_header h1 span.app {
+          display: inline-block;
+          margin-right: 55px; } }
       @media only screen and (min-width:40.063em) and (max-width:64em) {
-        header#page_header .title h1 span.app {
+        header#page_header h1 span.app {
           color: #fff; } }
 
 .bird_img {
   background-image: url('/images/logo.png');
   width: 100%;
-  height: 70px;
+  height: 65px;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-color: pink; }
+  background-size: contain; }
   @media only screen and (min-width:64.063em) {
     .bird_img {
       top: 35px;
-      left: 235px;
+      left: 300px;
       position: absolute; } }
   @media only screen and (min-width:40.063em) and (max-width:64em) {
     .bird_img {
@@ -5627,31 +5634,35 @@ header#page_header {
   @media only screen and (max-width: 40em) { }
 
 .header_content {
-  padding-top: 55px; }
+  padding-top: 55px;
+  background-color: green; }
   @media only screen and (min-width:64.063em) { }
   @media only screen and (min-width:40.063em) and (max-width:64em) { }
   @media only screen and (max-width: 40em) { }
   .header_content ul {
-    float: right; }
+    float: right;
+    background-color: blue;
+    margin-left: 25px; }
     @media only screen and (max-width: 40em) {
       .header_content ul {
         display: none; } }
     .header_content ul li.nav_link {
-      letter-spacing: 1px;
-      display: block;
+      display: inline;
       float: left; }
       @media only screen and (min-width:64.063em) { }
-      @media only screen and (min-width:40.063em) and (max-width:64em) { }
+      @media only screen and (min-width:40.063em) and (max-width:64em) {
+        .header_content ul li.nav_link {
+          background-color: pink; } }
       @media only screen and (max-width: 40em) { }
       .header_content ul li.nav_link#about_nav_link a {
         padding-left: 5px; }
       .header_content ul li.nav_link a {
-        font-size: 14px;
+        font-size: 15px;
         color: #1ACDCC;
         text-transform: uppercase;
         font-weight: 700;
-        padding-right: 18px;
-        padding-left: 18px;
+        padding-right: 15px;
+        padding-left: 15px;
         padding-bottom: 10px;
         display: block;
         letter-spacing: 2px; }
@@ -5679,15 +5690,17 @@ header#page_header {
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center right;
-  -webkit-box-shadow: 0 0 5px 3px #ccc7cf;
-  -moz-box-shadow: 0 0 5px 3px #ccc7cf;
-  box-shadow: 0 0 5px 3px #ccc7cf; }
-  @media only screen and (min-width:64.063em) { }
+  background-position: center right; }
+  @media only screen and (min-width:64.063em) {
+    .content_img {
+      -webkit-box-shadow: 0 0 5px 3px #ccc7cf;
+      -moz-box-shadow: 0 0 5px 3px #ccc7cf;
+      box-shadow: 0 0 5px 3px #ccc7cf; } }
   @media only screen and (min-width:40.063em) and (max-width:64em) {
     .content_img {
-      height: 250px;
-      width: 750px; } }
+      height: 260px;
+      width: 715px;
+      margin-left: 20px; } }
   @media only screen and (max-width: 40em) { }
 
 .content_info ul {
