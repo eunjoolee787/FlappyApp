@@ -16,17 +16,64 @@ $font-bold: 700;
   box-shadow: 0 0 5px 3px #ccc7cf;
 }
 
+.top-bar {
+  background-color: $dark-gray;
+  width: 100%;
+  background-image: url('/images/border.png');
+  background-repeat: repeat-x;
+  height: 65px;
+  
+  .title-area {
+    letter-spacing: 2px;
+    height: 60px;
+
+    h1 {
+      margin-top: 15px;
+    }
+    span#flappy {
+      font-size: 20px;
+      color: $light-blue;
+      text-transform: uppercase;
+      font-weight: $font-bold;
+      margin-left: 95px; 
+    }
+
+    span#app {
+      font-size: 20px;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: $font-bold;
+    }
+  
+    li.name { 
+      position: absolute;
+      div.bird_img { //TO DO-add box shadowing
+        background-image: url('/images/logo.png');
+        width: 100%;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        //background-color: pink;
+        position: relative;
+        top: -50px;
+        left: 10px;
+      } // end of .bird_img
+    } // end of li.name
+  } // end of .title-area
+} // end of .top-bar
+
+
 body {
   @media #{$large-up} {
-    background-color: orange;
+    //background-color: orange;
   }
 
   @media #{$medium-only} {
-    background-color: yellow;
+   background-color: $dark-gray;
   }
 
   @media #{$small-only} {
-    background-color: green;
+    background-color: $dark-gray;
   } //end of @media small-only
 
 } //end of @media large-up
@@ -50,6 +97,9 @@ header#page_header {
       padding-top: 40px;
       padding-right: 25px;
     }
+    @media #{$small-only}{
+      padding-left: 0;
+    }
   }
 
   h1{
@@ -57,9 +107,9 @@ header#page_header {
     text-transform: uppercase;
     font-weight: $font-bold;
     letter-spacing: 5px;
-    //background-color: red;
+    background-color: red;
     float: right;
-    margin-left: 125px;
+    margin-left:125px;
 
     @media #{$large-up}{
       display: inline-block;
@@ -72,17 +122,17 @@ header#page_header {
       font-size: 20px;
     }
     @media #{$small-only}{
-      font-size: 20px;
+      font-size: 15px;
     }
     
     span.flappy{
-      //background-color: green;
+      background-color: green;
         @media #{$large-up}{
         margin-right: 60px;
       }
     }
     span.app{
-      //background-color: purple;
+      background-color: purple;
       display: block;
       @media #{$large-up}{
         display: inline-block;
@@ -98,13 +148,13 @@ header#page_header {
 .bird_img { //TO DO-add box shadowing
   background-image: url('/images/logo.png');
   width: 100%;
-  height: 65px;
+  height: 70px;
   background-repeat: no-repeat;
   background-size: contain;
   //background-color: pink;
   @media #{$large-up}{
     top: 35px;
-    left: 300px;
+    left: 290px;
     position: absolute;
   }
   @media #{$medium-only}{
@@ -112,7 +162,8 @@ header#page_header {
     width: 75%;
   }
   @media #{$small-only}{
-    //define correct position
+    height: 50px;
+    width: 60%;
   }
 } // end of .bird_img
 
@@ -120,15 +171,14 @@ header#page_header {
   padding-top: 55px;
   background-color: green;
 
-
   @media #{$large-up}{
 
   }
   @media #{$medium-only}{
-
+    
   }
   @media #{$small-only}{
-
+    display: none;
   }
 
   ul {
@@ -164,16 +214,18 @@ header#page_header {
           color: $light-blue;
           text-transform: uppercase;
           font-weight: $font-bold;
-          padding-right: 15px;
-          padding-left: 15px;
+         
           padding-bottom: 10px;
           display: block;
           letter-spacing: 2px;
           @media #{$large-up}{
             border-bottom: 5px solid $light-blue;
+            padding-right: 15px;
+            padding-left: 15px;
           }
           @media #{$medium-only}{
-            
+             padding-right: 12px;
+             padding-left: 12px;
           }
           @media #{$small-only}{
            
@@ -195,19 +247,20 @@ header#page_header {
 // START OF CONTENT
 
 .content {
-  height: 750px;
-  padding-top: 50px;
+
   @media #{$large-up}{
-  
+    height: 750px;
+  padding-top: 50px;
   }
   @media #{$medium-only}{
-   padding-top: 2px;
+   background-color: pink;
+   padding-right: 0;
+
   }
   @media #{$small-only}{
    
   }
 }
-
 .content_img {
   background-image: url('/images/scenery.png');
   height: 270px;
@@ -221,11 +274,14 @@ header#page_header {
   }
   @media #{$medium-only}{
    height: 260px;
-   width: 715px;
-   margin-left: 20px;
+   width: auto;
+   margin-left: -0.9375rem;
+   margin-right: -0.9375rem;
   }
   @media #{$small-only}{
-   
+   width: auto;
+   margin-left: -0.9375rem;
+   margin-right: -0.9375rem;
   }
 }
 
@@ -234,7 +290,24 @@ header#page_header {
   color: black; //TO-D0 WHY DOESN'T IT TURN BLACK!!!
   text-transform: uppercase;
   text-align: center;
-  @include box-shadow();
+  margin-left: 0;
+
+  
+  @media #{$large-up}{
+    @include box-shadow();
+  }
+
+  @media #{$medium-only}{
+    @include box-shadow();
+    width: auto;
+     margin-left: -0.9375rem;
+     margin-right: -0.9375rem;
+  }
+  @media #{$small-only}{
+    width: auto;
+     margin-left: -0.9375rem;
+     margin-right: -0.9375rem;
+  }
 
   li {
     &.nav_black {
@@ -242,6 +315,7 @@ header#page_header {
       border-bottom: 1px solid $light-blue;
       background-color: $dark-gray;
       list-style-type: none;
+      letter-spacing: 2px;
       a {
         color: $light-blue;
       }
@@ -279,7 +353,16 @@ header#page_header {
 .lorem {
   font-weight: $font-bold;
   font-size: 25px;
+  background-color: #fff;
+  padding: 25px;
+  @media #{$small-only}{
+   padding-left: 10px;
+   padding-right: 10px;
+   background-color: #fff;
+  }
 }
+
+
 // END OF CONTENT
 
 
@@ -291,9 +374,27 @@ header#page_header {
   background-image: url('/images/border.png');
   background-repeat: repeat-x;
   padding-top: 50px;
-
 }
 
+#bottom_one {
+  @media #{$small-only}{
+    margin-left: 5px;
+    line-height: 235%;
+  }
+}
+
+#bottom_two {
+
+  @media #{$small-only}{
+    display: none;
+  }  
+}
+
+#bottom_three {
+  @media #{$small-only}{
+  
+  }
+}
 .bottom_block {
   border-left: 3px solid $light-blue;
   padding-left: 20px;
@@ -301,10 +402,10 @@ header#page_header {
   
   }
   @media #{$medium-only}{
-  border-left: none;
+    border-left: none;
   }
   @media #{$small-only}{
-   
+   border-left: none;
   }
   li {
     list-style-type: none;
@@ -342,7 +443,7 @@ footer{
     color: #fff;
   }
   @media #{$small-only}{
-   
+    color: #fff;
   }
 }
 

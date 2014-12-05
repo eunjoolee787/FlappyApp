@@ -5557,15 +5557,47 @@ th.hide-for-touch {
   th.show-for-print {
     display: table-cell !important; } }
 
-@media only screen and (min-width:64.063em) {
-  body {
-    background-color: orange; } }
+.top-bar {
+  background-color: #2B2D33;
+  width: 100%;
+  background-image: url('/images/border.png');
+  background-repeat: repeat-x;
+  height: 65px; }
+  .top-bar .title-area {
+    letter-spacing: 2px;
+    height: 60px; }
+    .top-bar .title-area h1 {
+      margin-top: 15px; }
+    .top-bar .title-area span#flappy {
+      font-size: 20px;
+      color: #1ACDCC;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-left: 95px; }
+    .top-bar .title-area span#app {
+      font-size: 20px;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 700; }
+    .top-bar .title-area li.name {
+      position: absolute; }
+      .top-bar .title-area li.name div.bird_img {
+        background-image: url('/images/logo.png');
+        width: 100%;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        top: -50px;
+        left: 10px; }
+
+@media only screen and (min-width:64.063em) { }
 @media only screen and (min-width:40.063em) and (max-width:64em) {
   body {
-    background-color: yellow; } }
+    background-color: #2B2D33; } }
 @media only screen and (max-width: 40em) {
   body {
-    background-color: green; } }
+    background-color: #2B2D33; } }
 
 header#page_header {
   background-color: #2B2D33;
@@ -5584,11 +5616,15 @@ header#page_header {
     header#page_header .title {
       padding-top: 40px;
       padding-right: 25px; } }
+  @media only screen and (max-width: 40em) {
+    header#page_header .title {
+      padding-left: 0; } }
   header#page_header h1 {
     color: #1ACDCC;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 5px;
+    background-color: red;
     float: right;
     margin-left: 125px; }
     @media only screen and (min-width:64.063em) {
@@ -5602,11 +5638,14 @@ header#page_header {
         font-size: 20px; } }
     @media only screen and (max-width: 40em) {
       header#page_header h1 {
-        font-size: 20px; } }
-    @media only screen and (min-width:64.063em) {
-      header#page_header h1 span.flappy {
-        margin-right: 60px; } }
+        font-size: 15px; } }
+    header#page_header h1 span.flappy {
+      background-color: green; }
+      @media only screen and (min-width:64.063em) {
+        header#page_header h1 span.flappy {
+          margin-right: 60px; } }
     header#page_header h1 span.app {
+      background-color: purple;
       display: block; }
       @media only screen and (min-width:64.063em) {
         header#page_header h1 span.app {
@@ -5619,26 +5658,31 @@ header#page_header {
 .bird_img {
   background-image: url('/images/logo.png');
   width: 100%;
-  height: 65px;
+  height: 70px;
   background-repeat: no-repeat;
   background-size: contain; }
   @media only screen and (min-width:64.063em) {
     .bird_img {
       top: 35px;
-      left: 300px;
+      left: 290px;
       position: absolute; } }
   @media only screen and (min-width:40.063em) and (max-width:64em) {
     .bird_img {
       height: 55px;
       width: 75%; } }
-  @media only screen and (max-width: 40em) { }
+  @media only screen and (max-width: 40em) {
+    .bird_img {
+      height: 50px;
+      width: 60%; } }
 
 .header_content {
   padding-top: 55px;
   background-color: green; }
   @media only screen and (min-width:64.063em) { }
   @media only screen and (min-width:40.063em) and (max-width:64em) { }
-  @media only screen and (max-width: 40em) { }
+  @media only screen and (max-width: 40em) {
+    .header_content {
+      display: none; } }
   .header_content ul {
     float: right;
     background-color: blue;
@@ -5661,28 +5705,32 @@ header#page_header {
         color: #1ACDCC;
         text-transform: uppercase;
         font-weight: 700;
-        padding-right: 15px;
-        padding-left: 15px;
         padding-bottom: 10px;
         display: block;
         letter-spacing: 2px; }
         @media only screen and (min-width:64.063em) {
           .header_content ul li.nav_link a {
-            border-bottom: 5px solid #1ACDCC; } }
-        @media only screen and (min-width:40.063em) and (max-width:64em) { }
+            border-bottom: 5px solid #1ACDCC;
+            padding-right: 15px;
+            padding-left: 15px; } }
+        @media only screen and (min-width:40.063em) and (max-width:64em) {
+          .header_content ul li.nav_link a {
+            padding-right: 12px;
+            padding-left: 12px; } }
         @media only screen and (max-width: 40em) { }
         .header_content ul li.nav_link a:hover {
           border-color: #fff;
           color: #fff; }
 
-.content {
-  height: 750px;
-  padding-top: 50px; }
-  @media only screen and (min-width:64.063em) { }
-  @media only screen and (min-width:40.063em) and (max-width:64em) {
-    .content {
-      padding-top: 2px; } }
-  @media only screen and (max-width: 40em) { }
+@media only screen and (min-width:64.063em) {
+  .content {
+    height: 750px;
+    padding-top: 50px; } }
+@media only screen and (min-width:40.063em) and (max-width:64em) {
+  .content {
+    background-color: pink;
+    padding-right: 0; } }
+@media only screen and (max-width: 40em) { }
 
 .content_img {
   background-image: url('/images/scenery.png');
@@ -5699,23 +5747,45 @@ header#page_header {
   @media only screen and (min-width:40.063em) and (max-width:64em) {
     .content_img {
       height: 260px;
-      width: 715px;
-      margin-left: 20px; } }
-  @media only screen and (max-width: 40em) { }
+      width: auto;
+      margin-left: -0.9375rem;
+      margin-right: -0.9375rem; } }
+  @media only screen and (max-width: 40em) {
+    .content_img {
+      width: auto;
+      margin-left: -0.9375rem;
+      margin-right: -0.9375rem; } }
 
 .content_info ul {
   font-weight: 700;
   color: black;
   text-transform: uppercase;
   text-align: center;
-  -webkit-box-shadow: 0 0 5px 3px #ccc7cf;
-  -moz-box-shadow: 0 0 5px 3px #ccc7cf;
-  box-shadow: 0 0 5px 3px #ccc7cf; }
+  margin-left: 0; }
+  @media only screen and (min-width:64.063em) {
+    .content_info ul {
+      -webkit-box-shadow: 0 0 5px 3px #ccc7cf;
+      -moz-box-shadow: 0 0 5px 3px #ccc7cf;
+      box-shadow: 0 0 5px 3px #ccc7cf; } }
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    .content_info ul {
+      -webkit-box-shadow: 0 0 5px 3px #ccc7cf;
+      -moz-box-shadow: 0 0 5px 3px #ccc7cf;
+      box-shadow: 0 0 5px 3px #ccc7cf;
+      width: auto;
+      margin-left: -0.9375rem;
+      margin-right: -0.9375rem; } }
+  @media only screen and (max-width: 40em) {
+    .content_info ul {
+      width: auto;
+      margin-left: -0.9375rem;
+      margin-right: -0.9375rem; } }
   .content_info ul li.nav_black {
     padding: 15px;
     border-bottom: 1px solid #1ACDCC;
     background-color: #2B2D33;
-    list-style-type: none; }
+    list-style-type: none;
+    letter-spacing: 2px; }
     .content_info ul li.nav_black a {
       color: #1ACDCC; }
   .content_info ul li.nav_content {
@@ -5738,7 +5808,14 @@ header#page_header {
 
 .lorem {
   font-weight: 700;
-  font-size: 25px; }
+  font-size: 25px;
+  background-color: #fff;
+  padding: 25px; }
+  @media only screen and (max-width: 40em) {
+    .lorem {
+      padding-left: 10px;
+      padding-right: 10px;
+      background-color: #fff; } }
 
 #three_content {
   background-color: #2B2D33;
@@ -5748,6 +5825,17 @@ header#page_header {
   background-repeat: repeat-x;
   padding-top: 50px; }
 
+@media only screen and (max-width: 40em) {
+  #bottom_one {
+    margin-left: 5px;
+    line-height: 235%; } }
+
+@media only screen and (max-width: 40em) {
+  #bottom_two {
+    display: none; } }
+
+@media only screen and (max-width: 40em) { }
+
 .bottom_block {
   border-left: 3px solid #1ACDCC;
   padding-left: 20px; }
@@ -5755,7 +5843,9 @@ header#page_header {
   @media only screen and (min-width:40.063em) and (max-width:64em) {
     .bottom_block {
       border-left: none; } }
-  @media only screen and (max-width: 40em) { }
+  @media only screen and (max-width: 40em) {
+    .bottom_block {
+      border-left: none; } }
   .bottom_block li {
     list-style-type: none; }
     .bottom_block li:hover {
@@ -5778,7 +5868,9 @@ footer {
   @media only screen and (min-width:40.063em) and (max-width:64em) {
     footer {
       color: #fff; } }
-  @media only screen and (max-width: 40em) { }
+  @media only screen and (max-width: 40em) {
+    footer {
+      color: #fff; } }
 
 .footer_tag {
   text-align: center;

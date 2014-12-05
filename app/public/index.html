@@ -9,9 +9,35 @@
 </head>
 <body>
 
+<!-- SMALL NAV BAR-FROM FOUNDATION DOCS -->
+<nav class="top-bar show-for-small-only" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <h1>
+        <!-- <a href="#">My Site</a> -->
+        <span id="flappy">flappy</span>
+        <span id="app">app</span>
+      </h1>
+        <div class="bird_img"></div>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+  </ul>
 
-<!-- START OF PAGE HEADER -->
-  <header id="page_header">
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+    <li class="nav_link" id="about_nav_link"><a href="#">about</a></li>
+      <li class="nav_link" id="specs_nav_link"><a href="#">specs</a></li>
+      <li class="nav_link" id="pricing_nav_link"><a href="#">pricing</a></li>
+      <li class="nav_link" id="contact_nav_link"><a href="#">contact</a></li>
+      <li class="nav_link" id="sign_up_nav_link"><a href="#">sign up</a></li>
+    </ul>
+  </section>
+</nav>
+
+<!-- START OF PAGE HEADER-medium & large -->
+  <header id="page_header" class="hide-for-small-only">
     <div class="row">
       <div class="large-6 medium-4 small-6 columns">
         <div class="title">
@@ -45,12 +71,12 @@
   <div class="content"> 
   
     <div class="row">
-      <div class="large-8 medium-12 small-8 columns">
+      <div class="large-8 medium-12 small-12 columns">
         <div class="content_img">
         </div> <!-- end of .birdImg -->
       </div> <!-- end of large, medium, small -->
 
-      <div class="large-4 medium-12 small-4 columns">
+      <div class="large-4 medium-12 small-12 columns">
         <div class="content_info">
           <ul>
             <li class="nav_black"><a href="Active">features</a></li>
