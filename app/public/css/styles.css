@@ -5590,6 +5590,11 @@ th.hide-for-touch {
         position: relative;
         top: -50px;
         left: 10px; }
+  .top-bar .top-bar-section ul li > a {
+    color: #1ACDCC;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 5px; }
 
 @media only screen and (min-width:64.063em) { }
 @media only screen and (min-width:40.063em) and (max-width:64em) {
@@ -5601,9 +5606,10 @@ th.hide-for-touch {
 
 header#page_header {
   background-color: #2B2D33;
-  width: 100%;
   background-image: url('/images/border.png');
-  background-repeat: repeat-x; }
+  background-repeat: repeat-x;
+  height: 250px;
+  width: 100%; }
   @media only screen and (min-width:64.063em) {
     header#page_header {
       -webkit-box-shadow: 0 0 5px 3px #ccc7cf;
@@ -5624,7 +5630,6 @@ header#page_header {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 5px;
-    background-color: red;
     float: right;
     margin-left: 125px; }
     @media only screen and (min-width:64.063em) {
@@ -5639,13 +5644,10 @@ header#page_header {
     @media only screen and (max-width: 40em) {
       header#page_header h1 {
         font-size: 15px; } }
-    header#page_header h1 span.flappy {
-      background-color: green; }
-      @media only screen and (min-width:64.063em) {
-        header#page_header h1 span.flappy {
-          margin-right: 60px; } }
+    @media only screen and (min-width:64.063em) {
+      header#page_header h1 span.flappy {
+        margin-right: 60px; } }
     header#page_header h1 span.app {
-      background-color: purple;
       display: block; }
       @media only screen and (min-width:64.063em) {
         header#page_header h1 span.app {
@@ -5676,17 +5678,14 @@ header#page_header {
       width: 60%; } }
 
 .header_content {
-  padding-top: 55px;
-  background-color: green; }
+  padding-top: 55px; }
   @media only screen and (min-width:64.063em) { }
   @media only screen and (min-width:40.063em) and (max-width:64em) { }
   @media only screen and (max-width: 40em) {
     .header_content {
       display: none; } }
   .header_content ul {
-    float: right;
-    background-color: blue;
-    margin-left: 25px; }
+    float: right; }
     @media only screen and (max-width: 40em) {
       .header_content ul {
         display: none; } }
@@ -5694,9 +5693,7 @@ header#page_header {
       display: inline;
       float: left; }
       @media only screen and (min-width:64.063em) { }
-      @media only screen and (min-width:40.063em) and (max-width:64em) {
-        .header_content ul li.nav_link {
-          background-color: pink; } }
+      @media only screen and (min-width:40.063em) and (max-width:64em) { }
       @media only screen and (max-width: 40em) { }
       .header_content ul li.nav_link#about_nav_link a {
         padding-left: 5px; }
@@ -5722,15 +5719,16 @@ header#page_header {
           border-color: #fff;
           color: #fff; }
 
-@media only screen and (min-width:64.063em) {
-  .content {
-    height: 750px;
-    padding-top: 50px; } }
-@media only screen and (min-width:40.063em) and (max-width:64em) {
-  .content {
-    background-color: pink;
-    padding-right: 0; } }
-@media only screen and (max-width: 40em) { }
+.content {
+  background-color: #fff; }
+  @media only screen and (min-width:64.063em) {
+    .content {
+      height: 750px;
+      padding-top: 50px; } }
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    .content {
+      padding-right: 0; } }
+  @media only screen and (max-width: 40em) { }
 
 .content_img {
   background-image: url('/images/scenery.png');
@@ -5741,6 +5739,7 @@ header#page_header {
   background-position: center right; }
   @media only screen and (min-width:64.063em) {
     .content_img {
+      border: 4px solid black;
       -webkit-box-shadow: 0 0 5px 3px #ccc7cf;
       -moz-box-shadow: 0 0 5px 3px #ccc7cf;
       box-shadow: 0 0 5px 3px #ccc7cf; } }
@@ -5758,7 +5757,7 @@ header#page_header {
 
 .content_info ul {
   font-weight: 700;
-  color: black;
+  color: #1ACDCC;
   text-transform: uppercase;
   text-align: center;
   margin-left: 0; }
@@ -5769,12 +5768,12 @@ header#page_header {
       box-shadow: 0 0 5px 3px #ccc7cf; } }
   @media only screen and (min-width:40.063em) and (max-width:64em) {
     .content_info ul {
-      -webkit-box-shadow: 0 0 5px 3px #ccc7cf;
-      -moz-box-shadow: 0 0 5px 3px #ccc7cf;
-      box-shadow: 0 0 5px 3px #ccc7cf;
       width: auto;
       margin-left: -0.9375rem;
-      margin-right: -0.9375rem; } }
+      margin-right: -0.9375rem;
+      -webkit-box-shadow: 0 0 5px 3px #ccc7cf;
+      -moz-box-shadow: 0 0 5px 3px #ccc7cf;
+      box-shadow: 0 0 5px 3px #ccc7cf; } }
   @media only screen and (max-width: 40em) {
     .content_info ul {
       width: auto;
@@ -5785,7 +5784,8 @@ header#page_header {
     border-bottom: 1px solid #1ACDCC;
     background-color: #2B2D33;
     list-style-type: none;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    height: 48px; }
     .content_info ul li.nav_black a {
       color: #1ACDCC; }
   .content_info ul li.nav_content {
@@ -5796,7 +5796,8 @@ header#page_header {
     letter-spacing: 2px;
     font-size: 15px; }
     .content_info ul li.nav_content a {
-      font-weight: 700; }
+      font-weight: 700;
+      color: #2B2D33; }
     .content_info ul li.nav_content .white_color {
       color: #fff; }
     .content_info ul li.nav_content a {
@@ -5809,13 +5810,11 @@ header#page_header {
 .lorem {
   font-weight: 700;
   font-size: 25px;
-  background-color: #fff;
-  padding: 25px; }
+  color: #2B2D33; }
   @media only screen and (max-width: 40em) {
     .lorem {
       padding-left: 10px;
-      padding-right: 10px;
-      background-color: #fff; } }
+      padding-right: 10px; } }
 
 #three_content {
   background-color: #2B2D33;
@@ -5834,7 +5833,9 @@ header#page_header {
   #bottom_two {
     display: none; } }
 
-@media only screen and (max-width: 40em) { }
+@media only screen and (max-width: 40em) {
+  #bottom_three {
+    padding-left: 0px; } }
 
 .bottom_block {
   border-left: 3px solid #1ACDCC;
@@ -5861,9 +5862,11 @@ header#page_header {
         color: #fff; }
 
 footer {
+  padding-bottom: 25px;
   height: 35px; }
   @media only screen and (min-width:64.063em) {
     footer {
+      color: #2B2D33;
       background-color: #1ACDCC; } }
   @media only screen and (min-width:40.063em) and (max-width:64em) {
     footer {
@@ -5874,12 +5877,12 @@ footer {
 
 .footer_tag {
   text-align: center;
-  font-size: 15px;
+  font-size: 14px;
   margin-top: 40px;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 2px;
-  padding-top: 5px; }
+  padding-top: 7px; }
 
 @media only screen and (min-width:64.063em) { }
 
